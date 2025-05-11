@@ -41,10 +41,12 @@
         }
       },
       "e2e": {
-        "executor": "@nx/playwright:playwright",
-        "options": { "playwrightConfig": "packages/scrape-core/playwright.config.ts" }
+        "options": {
+          "playwright-config": "packages/scrape-core/playwright.config.ts"
+        }
       }
-    }
+    },
+    "// targets": "to see all targets run: nx show project @ax-sh/scrape-core --web"
   },
   "dependencies": {
     "@swc/helpers": "~0.5.11"
