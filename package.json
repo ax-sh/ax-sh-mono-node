@@ -8,7 +8,8 @@
     "test:core": "nx run scrape-core:test --watch",
     "format": "nx format:write",
     "g": "nx g",
-    "list": "nx list"
+    "list": "nx list",
+    "test:ui": "npx playwright test --ui"
   },
   "private": true,
   "dependencies": {},
