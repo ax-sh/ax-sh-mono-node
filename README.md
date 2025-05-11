@@ -14,7 +14,7 @@
 ## Generate a library
 
 ```sh
-npx nx g @nx/js:lib packages/pkg1 --publishable --importPath=@my-org/pkg1
+bunx nx g @nx/js:lib packages/scrape-core --publishable --importPath=@ax-sh/scrape-core
 ```
 
 ## Run tasks
