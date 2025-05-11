@@ -55,11 +55,16 @@
         "options": {
           "playwright-config": "packages/scrape-core/playwright.config.ts"
         }
+      },
+      "lint": {
+        "executor": "@nx/eslint:lint",
+        "options": {
+          "lintFilePatterns": ["packages/scrape-core/**/*.ts"]
+        }
       }
     },
     "// targets": "to see all targets run: nx show project @ax-sh/scrape-core --web"
   },
   "dependencies": {
-
   }
 }
