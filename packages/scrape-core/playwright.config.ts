@@ -3,8 +3,13 @@ import { nxE2EPreset } from "@nx/playwright/preset";
 import { workspaceRoot } from "@nx/devkit";
 
 // For CI, you may want to set BASE_URL to the deployed application.
-// biome-ignore lint/complexity/useLiteralKeys: <explanation>
-const baseURL = process.env["BASE_URL"] || "http://localhost:3000";
+const baseURL = process.env.BASE_URL ?? "http://localhost:3000";
+
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * Read environment variables from file.
@@ -16,7 +21,7 @@ import "dotenv/config";
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  ...nxE2EPreset(import.meta.url, { testDir: "./e2e" }),
+  ...nxE2EPreset(__filename, { testDir: "./e2e" }),
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions.    */
   use: {
     baseURL,
