@@ -1,3 +1,3 @@
 export function scrapeCore(): string {
-  return 'scrape-core';
+  return "scrape-core";
 }

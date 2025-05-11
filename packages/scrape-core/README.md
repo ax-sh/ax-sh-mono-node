@@ -8,4 +8,5 @@ Run `nx build scrape-core` to build the library.
 
 ## Running unit tests
 
-Run `nx test scrape-core` to execute the unit tests via [Vitest](https://vitest.dev/).
+Run `nx test scrape-core` to execute the unit tests via
+[Vitest](https://vitest.dev/).
