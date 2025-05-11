@@ -34,10 +34,21 @@
           "stripLeadingPaths": true
         }
       },
+      "test:run": {
+        "executor": "@nx/vite:test",
+        "options": {
+          "config": "packages/scrape-core/vite.config.ts"
+        }
+      },
       "test": {
         "executor": "@nx/vite:test",
         "options": {
           "config": "packages/scrape-core/vite.config.ts"
+        },
+        "configurations": {
+          "watch": {
+            "watch": true
+          }
         }
       },
       "e2e": {
