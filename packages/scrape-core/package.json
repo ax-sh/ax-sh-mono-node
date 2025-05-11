@@ -42,7 +42,7 @@
       },
       "e2e": {
         "executor": "@nx/playwright:playwright",
-        "options": { "playwrightConfig": "apps/my-app/playwright.config.ts" }
+        "options": { "playwrightConfig": "packages/scrape-core/playwright.config.ts" }
       }
     }
   },
