@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "test": "nx run-many -t test",
+    "nx": "npx nx",
+    "test": "npx nx run-many -t test",
     "preinstall": "npx only-allow bun",
-    "test:core": "nx test @ax-sh/scrape-core"
+    "test:core": "npx nx test @ax-sh/scrape-core"
   },
   "private": true,
   "dependencies": {},
