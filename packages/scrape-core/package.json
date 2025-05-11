@@ -33,6 +33,12 @@
           "skipTypeCheck": true,
           "stripLeadingPaths": true
         }
+      },
+      "test": {
+        "executor": "@nx/vite:test",
+        "options": {
+          "config": "packages/scrape-core/vite.config.ts"
+        }
       }
     }
   },

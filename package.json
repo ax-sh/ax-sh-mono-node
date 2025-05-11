@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "test": "nx run-many -t test"
+    "test": "nx run-many -t test",
+    "test:core": "nx test @ax-sh/scrape-core"
   },
   "private": true,
   "dependencies": {},
