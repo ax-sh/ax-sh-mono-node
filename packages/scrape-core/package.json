@@ -39,6 +39,10 @@
         "options": {
           "config": "packages/scrape-core/vite.config.ts"
         }
+      },
+      "e2e": {
+        "executor": "@nx/playwright:playwright",
+        "options": { "playwrightConfig": "apps/my-app/playwright.config.ts" }
       }
     }
   },
